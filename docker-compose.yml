@@ -1,0 +1,12 @@
+version: '3'
+
+services: # lists the different apps
+
+  api: # name for the service
+    build: ./server # location of the Dockerfile
+    ports:
+      - 3000:3000
+  client:
+    build: ./client
+    ports:
+      - 1234:1234
